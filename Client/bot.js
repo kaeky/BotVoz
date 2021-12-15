@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Discord = require("discord.js");
 const config = require('../config.json');
 const { generateDependencyReport } = require('@discordjs/voice');
@@ -22,15 +23,13 @@ const client = new GCommandsClient({
 
 })
 
-client.config = config;
-
 function start () {
     console.log(generateDependencyReport());
     client
         .on("log", console.log)
         .on("debug", console.log)
-    client.login(config.TOKEN).then(() => {console.log("Funcionando... ")}).catch(err =>console.log(err))
-//    //ready.inicia(client, Discord)
+    client.login(process.env.DISCORD_TOKEN).then(() => {console.log("Funcionando... ")}).catch(err =>console.log(err))
+
 
     
 }
