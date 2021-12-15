@@ -2,8 +2,8 @@ require('dotenv').config();
 const Discord = require("discord.js");
 const config = require('../config.json');
 const { generateDependencyReport } = require('@discordjs/voice');
-const { Intents } = require('discord.js');
-const { GCommandsClient } = require("gcommands")
+//const { Intents } = require('discord.js');
+//const { GCommandsClient } = require("gcommands")
 const client = new Discord.client();
 // const client = new GCommandsClient({
 //     loader: {
