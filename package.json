@@ -9,5 +9,8 @@
     "google-tts-api": "^2.0.2",
     "libsodium-wrappers": "^0.7.9",
     "ytdl-core": "^4.9.1"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
