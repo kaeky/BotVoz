@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const { generateDependencyReport } = require('@discordjs/voice');
 const { Intents } = require('discord.js');
 const { GCommandsClient } = require("gcommands")
-const client = new Discord.client();
+//const client = new Discord.client();
 const client = new GCommandsClient({
     loader: {
         cmdDir: __dirname + "/commands/",
